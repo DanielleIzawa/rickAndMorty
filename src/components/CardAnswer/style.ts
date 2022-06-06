@@ -1,9 +1,15 @@
 import styled from "styled-components";
 
+import Image from "../../commom/assets/cartoon.svg";
 import Theme from "../../commom/styles/theme";
 
 export const Container = styled.div`
   display: flex;
+  img {
+    text-align: start;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  }
 `;
 export const List = styled.div`
   align-items: center;
@@ -11,30 +17,31 @@ export const List = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 470px;
-  height: 154px;
+  width: 370px;
+  height: 124px;
   border-radius: 10px;
   background: ${Theme.colors.black_card};
   color: ${Theme.colors.blue_text};
+
+  /* img {
+    height: 124px;
+    margin-bottom: 100px;
+    text-align: start;
+    border-bottom-left-radius: 10px;
+    border-top-left-radius: 10px;
+  } */
+  h3 {
+    margin-top: -1px;
+  }
 `;
 export const ContainerImg = styled.div`
   display: flex;
   text-align: start;
-  margin-top: -120px;
-  height: 154px;
-
-  img {
-    border-bottom-left-radius: 10px;
-    border-top-left-radius: 10px;
-  }
+  margin-top: -114px;
+  margin-left: -190px;
+  height: 156px;
+  background: url(${Image}) no-repeat center right;
 `;
-export const Img = styled.div`
-  img {
-  }
+export const ContainerDescription = styled.div`
+  margin-top: 10px;
 `;
-/* export const ContainerImgBall = styled.div`
-  padding-left: 35%;
-  img {
-    width: 12px;
-  }
-`; */

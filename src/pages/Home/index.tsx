@@ -12,7 +12,7 @@ const Home: React.FC = () => {
     <>
       <Nav />
       <Container>
-        <h1>
+        <h1 className="text">
           Está preparado para navegar no mundo <br />
           de Rick and Morty ?
         </h1>

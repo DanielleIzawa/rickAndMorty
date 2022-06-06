@@ -1,39 +1,65 @@
 import React from "react";
+import { Carousel } from "react-responsive-carousel";
 
-import Image from "../../commom/assets/imgMain.svg";
-import { ContainerCarousel } from "../../pages/Teste/styles";
-/* import Image from "../../commom/assets/Rick-and-Morty-Shop-logo1 1.svg"; */
-/* import Card from "../Card"; */
-import Footer from "../Footer";
-import {} from "./styles";
+import CardAnswer from "../CardAnswer";
+import { CarouselLine, Container, ContainerCarousel } from "./styles";
 
-import "swiper/css";
-import "swiper/css/pagination";
+import "react-responsive-carousel/lib/styles/carousel.min.css";
 
-const Carousel: React.FC = () => {
+const CarouselMain: React.FC = () => {
   return (
     <>
-      <ContainerCarousel>
-        <h1>Resultados</h1>
-        <div className="items-wrapper">
-          <div className="items">
-            <div className="item">
-              <img src={Image} alt="" className="Image" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" className="Image" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" className="Image" />
-            </div>
-            <div className="item">
-              <img src={Image} alt="" className="Image" />
-            </div>
+      <Container style={{ padding: "10px" }}>
+        <h3 className="text">
+          <span>
+            <span>Resultados</span>
+          </span>
+        </h3>
+        <Carousel className="item" showArrows={false}>
+          <ContainerCarousel className="containerCarousel">
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+          </ContainerCarousel>
+          <ContainerCarousel>
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+          </ContainerCarousel>
+          <div>
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
           </div>
-        </div>
-      </ContainerCarousel>
-      <Footer />
+        </Carousel>
+        {/* <Modal isOpen={modalIsOpen}>
+          <h2>Hello</h2>
+        </Modal> */}
+      </Container>
+
+      {/* <Footer /> */}
     </>
   );
 };
-export default Carousel;
+export default CarouselMain;

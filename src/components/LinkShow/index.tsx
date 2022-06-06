@@ -1,11 +1,15 @@
 import React from "react";
 
-import { Text } from "./styles";
+import Image from "../../commom/assets/set2.svg";
+import { Container, Text } from "./styles";
 
 const Link: React.FC = () => {
   return (
     <>
-      <Text>Mostrar Mais</Text>
+      <Container>
+        <Text>Mostrar Mais</Text>
+        <img src={Image} alt="" className="Image" />
+      </Container>
     </>
   );
 };

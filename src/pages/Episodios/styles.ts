@@ -6,9 +6,32 @@ import Theme from "../../commom/styles/theme";
 export const Container = styled.div`
   justify-content: center;
   max-width: 940px;
-  /*   font-weight: ${Theme.fontweight.large_weight};
-  font-size: ${Theme.fontSize.px_large};
-  color: ${Theme.colors.blue_text}; */
+  h1 {
+    text-align: start;
+  }
+  @media (max-width: ${Theme.breakpoints.large}) {
+    div {
+      width: 90%;
+    }
+    h1 {
+      font-size: ${Theme.fontSize.px_medium_title};
+    }
+  }
+  @media (max-width: ${Theme.breakpoints.medium}) {
+    div {
+      width: 90%;
+      /* justify-items: center; */
+    }
+    h1 {
+      font-size: ${Theme.fontSize.px_medium};
+    }
+  }
+  @media (max-width: ${Theme.breakpoints.small}) {
+    div {
+      width: 90%;
+      padding-left: 0;
+    }
+  }
 `;
 export const ContainerCard = styled.div`
   display: grid;
@@ -16,11 +39,21 @@ export const ContainerCard = styled.div`
   grid-gap: 20px;
   max-width: 960px;
   margin: 25px auto;
-  padding-left: 21%;
+  padding-left: 18%;
+  .text {
+    margin-top: 40px;
+  }
+
+  @media (max-width: ${Theme.breakpoints.small}) {
+    div {
+      width: 95%;
+      padding-left: 0;
+    }
+  }
 `;
 export const MasterSelect = styled.div`
   padding-left: 200px;
-  padding-top: 55px;
+  padding-top: 49px;
 `;
 export const Select = styled.select`
   appearance: none;
@@ -29,7 +62,6 @@ export const Select = styled.select`
   background: url(${image}) no-repeat center right 21px;
   border: 1px solid #333;
   padding-right: 20px;
-
   width: 210px;
   height: 60px;
   left: 250px;

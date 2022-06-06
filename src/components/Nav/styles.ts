@@ -10,13 +10,36 @@ export const Nav = styled.nav`
   display: flex;
   justify-content: space-between;
   height: 90px;
+
   background-color: ${Theme.colors.black};
-  .logo {
-    padding: 200px 0;
+  a {
+    margin-left: 140px;
   }
-  h3:hover {
-    background: ${Theme.colors.black_card};
-    padding: 12px;
-    border-radius: 4px;
+  .logo {
+    padding: 200px 0 0 0;
+  }
+  @media (max-width: ${Theme.breakpoints.large}) {
+    img {
+      width: 80%;
+    }
+  }
+
+  @media (max-width: ${Theme.breakpoints.medium}) {
+    img {
+      width: 70%;
+      margin-top: 10px;
+    }
+    nav {
+      height: 70px;
+    }
+  }
+  @media (max-width: ${Theme.breakpoints.small}) {
+    img {
+      width: 50%;
+      margin-top: 10px;
+    }
+    nav {
+      height: 70px;
+    }
   }
 `;

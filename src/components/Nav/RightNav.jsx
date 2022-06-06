@@ -1,20 +1,27 @@
 import React from "react";
 import styled from "styled-components";
+
 import Theme from "./../../commom/styles/theme";
 
 export const Ul = styled.ul`
   list-style: none;
   display: flex;
   flex-flow: row nowrap;
+  padding: 0 45px;
 
   li {
-    padding: 18px 10px;
+    margin: 0 10px;
+    h3:hover {
+      background: ${Theme.colors.black_card};
+      padding: 12px;
+      border-radius: 4px;
+    }
   }
   a {
     text-decoration: none;
   }
 
-  @media (max-width: 768px) {
+  @media (max-width: ${Theme.breakpoints.large}) {
     flex-flow: column nowrap;
     background-color: ${Theme.colors.black};
     position: fixed;

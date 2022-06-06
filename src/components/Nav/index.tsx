@@ -1,7 +1,8 @@
 import React from "react";
+
 import Logo from "../../commom/assets/Rick-And-Morty-Logo 1.png";
-import { Nav } from "./styles";
 import Burger from "./Burger";
+import { Nav } from "./styles";
 
 const Navbar = () => {
   return (

@@ -6,14 +6,15 @@ import FormSearch from "../../components/FormSearch";
 import Link from "../../components/Link";
 import Nav from "../../components/Nav";
 /* import HeaderTest from "./../../components/HeaderTest/index"; */
-import { ImageMidle } from "./styles";
+import { ContainerText, ImageMidle } from "./styles";
 
 const Personagens: React.FC = () => {
   return (
     <>
       <Nav />
-      {/* <HeaderTest /> */}
-      <h1>Buscar Personagens</h1>
+      <ContainerText>
+        <h1>Buscar Personagens</h1>
+      </ContainerText>
       <FormSearch />
       <ImageMidle>
         <img src={Image} alt="" className="Image" />

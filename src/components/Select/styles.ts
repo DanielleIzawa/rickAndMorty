@@ -4,8 +4,8 @@ import image from "../../commom/assets/set.png";
 import Theme from "../../commom/styles/theme";
 
 export const MasterSelect = styled.div`
-  padding-left: 200px;
-  margin-top: 49px;
+  margin-top: 20px;
+  margin-bottom: 20px;
 `;
 export const SelectBasic = styled.select`
   appearance: none;

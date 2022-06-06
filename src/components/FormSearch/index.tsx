@@ -1,12 +1,6 @@
 import React from "react";
 
-import {
-  Container,
-  Form,
-  MasterSelect,
-  MasterSelectContainer,
-  SelectBasic,
-} from "./styles";
+import { Container, Form, MasterSelect, MasterSelectContainer, SelectBasic } from "./styles";
 
 const FormSearch: React.FC = () => {
   return (

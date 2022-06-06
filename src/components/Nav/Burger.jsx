@@ -1,5 +1,7 @@
 import React, { useState } from "react";
 import styled from "styled-components";
+
+import Theme from "./../../commom/styles/theme";
 /* import { StyleBurger } from "./styles"; */
 import RightNav from "./RightNav";
 
@@ -12,7 +14,7 @@ export const StyleBurger = styled.div`
   z-index: 20;
   display: none;
 
-  @media (max-width: 768px) {
+  @media (max-width: ${Theme.breakpoints.large}) {
     display: flex;
     justify-content: space-around;
     flex-flow: column nowrap;

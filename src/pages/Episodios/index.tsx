@@ -1,8 +1,8 @@
 import React from "react";
 
 import Card from "../../components/Card";
-import Nav from "../../components/Nav";
 import LinkShow from "../../components/LinkShow";
+import Nav from "../../components/Nav";
 import Select from "../../components/Select";
 import { Container, ContainerCard } from "./styles";
 
@@ -11,20 +11,15 @@ const Episodios: React.FC = () => {
     <>
       <Nav />
       <Container>
-        <h1>
-          <span>Episódios</span>
-        </h1>
-        <Select />
         <ContainerCard>
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
-          <Card />
+          <h1 className="text">Episódios</h1>
+          <Select />
+          <Card fullSize />
+          <Card fullSize />
+          <Card fullSize />
+          <Card fullSize />
+          <Card fullSize />
+          <Card fullSize />
         </ContainerCard>
         <LinkShow />
       </Container>

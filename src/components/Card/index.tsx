@@ -1,21 +1,24 @@
 import React from "react";
 
 import Image from "../../commom/assets/cartoon.svg";
-import { Container, ContainerImg, Content, List } from "./style";
+import { Container, Content, List } from "./style";
 
-const Card: React.FC = () => {
+interface FormSearchProps {
+  fullSize?: boolean;
+  /* onClick?: React.MouseEventHandler<HTMLElement>; */
+}
+const Card: React.FC<FormSearchProps> = ({ fullSize /* , onClick */ }) => {
   return (
     <>
-      <Container>
+      <Container fullSize={fullSize} /* onClick={onClick} */>
         <List>
+          {fullSize && <h1>01</h1>}
           <Content>
             <h2>Other Dimensions</h2>
             <h3>Dimensão: c-1376</h3>
-            <ContainerImg>
-              <img src={Image} alt="" className="Image" />
-            </ContainerImg>
           </Content>
         </List>
+        <img src={Image} alt="" className="Image" />
       </Container>
     </>
   );

@@ -1,14 +1,35 @@
 import styled from "styled-components";
 
-export const Container = styled.div`
-  display: flex;
-  max-width: 1070px;
-  margin: 0 auto;
-  flex-flow: row wrap;
-  gap: 20px;
-`;
+import Theme from "./../../commom/styles/theme";
 
+export const ContainerText = styled.div`
+  margin-top: 60px;
+  @media (max-width: ${Theme.breakpoints.large}) {
+    h1 {
+      font-size: 23px;
+    }
+  }
+  @media (max-width: ${Theme.breakpoints.medium}) {
+    h1 {
+      font-size: 20px;
+    }
+  }
+`;
 export const ImageMidle = styled.div`
-  margin-top: 156px;
+  margin-top: 250px;
   text-align: center;
+  img {
+    width: 359px;
+    height: 184.5px;
+  }
+  @media (max-width: ${Theme.breakpoints.large}) {
+    img {
+      width: 70%;
+    }
+  }
+  @media (max-width: ${Theme.breakpoints.medium}) {
+    img {
+      width: 50%;
+    }
+  }
 `;

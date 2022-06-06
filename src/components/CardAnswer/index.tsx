@@ -1,80 +1,68 @@
 import React /* , { useState } */ from "react";
-/* Modal.setAppElement("modal"); */
-import Modal from "react-modal";
 
-/* import Ball from "../../commom/assets/ball.svg"; */
-import Image from "../../commom/assets/cartoon.svg";
-import { Container, ContainerImg, Content, List } from "./style";
+/* import Image from "../../commom/assets/cartoon.svg"; */
+import { Container, ContainerDescription, Content, List } from "./style";
 
-const CardAnswer: React.FC = () => {
-  /* const [modalIsOpen, setIsOpen] = useState(false); */
+interface CardProps {
+  onClick?: React.MouseEventHandler<HTMLElement>;
+}
 
-  /*  function openModal() {
-    setIsOpen(true);
-  } */
-
+const CardAnswer: React.FC<CardProps> = ({ onClick }) => {
   return (
     <>
-      {/* <button onClick={openModal}>Carousel</button> */}
-      <Container>
+      <Container onClick={onClick}>
         <List>
+          {/* <img src={Image} alt="" className="Image" /> */}
           <Content>
             <h1>
               <span>
                 <p>Heroine Keith</p>
               </span>
             </h1>
-            <h3>
-              <span>
+            <ContainerDescription>
+              <h3>
                 <span>
-                  <p>Alive - Humanoid</p>
+                  <span>
+                    <p>Alive - Humanoid</p>
+                  </span>
                 </span>
-              </span>
-            </h3>
-            <h3>
-              <span>
+              </h3>
+              <h3>
                 <span>
-                  <p>
-                    <p>Primeira aparição:</p>
-                  </p>
+                  <span>
+                    <p>
+                      <p>Primeira aparição:</p>
+                    </p>
+                  </span>
                 </span>
-              </span>
-            </h3>
-            <h3>
-              <span>
+              </h3>
+              <h3>
                 <span>
-                  <p>Pilot Episode</p>
+                  <span>
+                    <p>Pilot Episode</p>
+                  </span>
                 </span>
-              </span>
-            </h3>
-            <h3>
-              <span>
+              </h3>
+              <h3>
                 <span>
-                  <p>
-                    <p>Ultima aparição:</p>
-                  </p>
+                  <span>
+                    <p>
+                      <p>Ultima aparição:</p>
+                    </p>
+                  </span>
                 </span>
-              </span>
-            </h3>
-            <h3>
-              <span>
+              </h3>
+              <h3>
                 <span>
-                  <p>The Vat of Acid Episode</p>
+                  <span>
+                    <p>The Vat of Acid Episode</p>
+                  </span>
                 </span>
-              </span>
-            </h3>
-            <ContainerImg>
-              <img src={Image} alt="" className="Image" />
-            </ContainerImg>
-            {/* <ContainerImgBall>
-                <img src={Ball} alt="" className="Image" />
-              </ContainerImgBall> */}
+              </h3>
+            </ContainerDescription>
           </Content>
         </List>
       </Container>
-      {/* <Modal isOpen={modalIsOpen}>
-        <h2>Hello</h2>
-      </Modal> */}
     </>
   );
 };

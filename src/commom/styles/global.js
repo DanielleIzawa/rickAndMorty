@@ -29,16 +29,16 @@ export default createGlobalStyle`
     font-weight: ${Theme.fontweight.large_weight};
     font-size: ${Theme.fontSize.px_large};
     color: ${Theme.colors.blue_text};
-    margin-top: 80px;
+    margin-top: 0px;
     span{
       color: ${Theme.colors.black};
       text-align: start;
       margin: 0;
       p{
         color: ${Theme.colors.white_text};
-        ${Theme.fontSize.px_small};
+        font-size:${Theme.fontSize.px_small};
         text-align: center;
-        padding-left: 98px;
+        padding-left: 115px;
       }
     }
   }
@@ -47,7 +47,7 @@ export default createGlobalStyle`
   font-weight: ${Theme.fontweight.medium_weight};
   font-size: ${Theme.fontSize.px_medium};
   color: ${Theme.colors.black};
-  margin: 15px 22px;
+  margin-left: 20px;
     span{
     margin: 0;
     color: ${Theme.colors.blue_text};
@@ -60,8 +60,8 @@ export default createGlobalStyle`
 }
 
   h3{
+  margin-top: 10px;
   margin-left: 22px;
-  /* margin-top: -25px; */
   font-weight: ${Theme.fontweight.medium_weight};
   font-size: ${Theme.fontSize.px_small_title};
   color: ${Theme.colors.black};

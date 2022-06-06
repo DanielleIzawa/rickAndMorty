@@ -7,10 +7,18 @@ const Select: React.FC = () => {
     <>
       <MasterSelect>
         <SelectBasic>
-          <option value="volvo">Temporada 1</option>
-          <option value="saab">Temporada 2</option>
-          <option value="mercedes">Temporada 3</option>
-          <option value="audi">Temporada 4</option>
+          <option value="Temporada 1" className="select">
+            Temporada 1
+          </option>
+          <option value="Temporada 2" className="select">
+            Temporada 2
+          </option>
+          <option value="Temporada 3" className="select">
+            Temporada 3
+          </option>
+          <option value="Temporada 4" className="select">
+            Temporada 4
+          </option>
         </SelectBasic>
       </MasterSelect>
     </>

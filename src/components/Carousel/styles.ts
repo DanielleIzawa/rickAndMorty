@@ -1,32 +1,28 @@
 import styled from "styled-components";
 
+/* import Theme from "../../commom/styles/theme"; */
+
 export const Container = styled.div`
-  display: grid;
-  place-items: center;
-  height: 100vh;
+  background-color: #24282f;
+  /* bottom: 10%; */
+  .text {
+    margin-bottom: 30px;
+  }
+`;
+export const CarouselLine = styled.div`
+  display: flex;
+  margin-bottom: 20px;
+  gap: 15px;
+  background-color: #24282f;
+  /* padding: 25px auto; */
 
-  .items-wrapper {
-    width: 100vw;
+  :last-child {
+    /* margin-bottom: 50px; */
   }
-  .items {
-    display: flex;
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
-    -webkit-overflow-scrolling: touch;
-    scroll-behavior: smooth;
-  }
-  .item {
-    flex: none;
-    width: 100%;
-    height: 400px;
+`;
 
-    scroll-snap-align: start;
-    pointer-events: none;
-  }
-  img {
-    width: 100%;
-    height: 100%;
-
-    object-fit: cover;
-  }
+export const ContainerCarousel = styled.div`
+  /* place-items: center; */
+  height: 40vh;
+  background-color: #24282f;
 `;
