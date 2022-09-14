@@ -17,7 +17,7 @@ export const List = styled.div`
 `;
 
 export const Content = styled.div`
-  width: 370px;
+  width: 325px;
   height: 124px;
   border-radius: 10px;
   background: ${Theme.colors.black_card};
@@ -30,8 +30,16 @@ export const Content = styled.div`
     border-bottom-left-radius: 10px;
     border-top-left-radius: 10px;
   } */
+  /*  h1 {
+    span {
+      p {
+        margin-top: 1px;
+      }
+    }
+  } */
   h3 {
     margin-top: -1px;
+    margin-left: 0px;
   }
 `;
 export const ContainerImg = styled.div`
@@ -45,3 +53,16 @@ export const ContainerImg = styled.div`
 export const ContainerDescription = styled.div`
   margin-top: 10px;
 `;
+export const Modal = styled.div`
+  .ReactModal__Content {
+  }
+  .ReactModal__Content--after-open {
+    width: 900px;
+    height: 500px;
+    background-color: red;
+  }
+`;
+export const ContainerModal = styled.div``;
+export const ContainerImage = styled.div``;
+export const Img = styled.img``;
+export const Text = styled.div``;

@@ -1,12 +1,18 @@
 import styled from "styled-components";
 
 /* import Theme from "../../commom/styles/theme"; */
+import Theme from "./../../commom/styles/theme";
 
 export const Container = styled.div`
   background-color: #24282f;
-  /* bottom: 10%; */
   .text {
     margin-bottom: 30px;
+  }
+  .carousel-status {
+    display: none;
+  }
+  ul {
+    justify-content: flex-end;
   }
 `;
 export const CarouselLine = styled.div`
@@ -14,7 +20,8 @@ export const CarouselLine = styled.div`
   margin-bottom: 20px;
   gap: 15px;
   background-color: #24282f;
-  /* padding: 25px auto; */
+  justify-content: center;
+  flex-wrap: wrap-reverse;
 
   :last-child {
     /* margin-bottom: 50px; */
@@ -25,4 +32,6 @@ export const ContainerCarousel = styled.div`
   /* place-items: center; */
   height: 40vh;
   background-color: #24282f;
+  /* width: 940px; */
+  align-items: center;
 `;

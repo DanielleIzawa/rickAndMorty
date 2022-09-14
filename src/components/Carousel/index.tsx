@@ -16,6 +16,37 @@ const CarouselMain: React.FC = () => {
           </span>
         </h3>
         <Carousel className="item" showArrows={false}>
+          <></>
+          {/* <ContainerCarousel className="containerCarousel">
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+          </ContainerCarousel>
+          <ContainerCarousel className="containerCarousel">
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+          </ContainerCarousel>
+          <ContainerCarousel className="containerCarousel">
+            <CarouselLine>
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+              <CardAnswer />
+            </CarouselLine>
+          </ContainerCarousel> */}
           <ContainerCarousel className="containerCarousel">
             <CarouselLine>
               <CardAnswer />
@@ -28,7 +59,7 @@ const CarouselMain: React.FC = () => {
               <CardAnswer />
             </CarouselLine>
           </ContainerCarousel>
-          <ContainerCarousel>
+          <ContainerCarousel className="containerCarousel">
             <CarouselLine>
               <CardAnswer />
               <CardAnswer />
@@ -40,7 +71,7 @@ const CarouselMain: React.FC = () => {
               <CardAnswer />
             </CarouselLine>
           </ContainerCarousel>
-          <div>
+          <ContainerCarousel className="containerCarousel">
             <CarouselLine>
               <CardAnswer />
               <CardAnswer />
@@ -51,11 +82,8 @@ const CarouselMain: React.FC = () => {
               <CardAnswer />
               <CardAnswer />
             </CarouselLine>
-          </div>
+          </ContainerCarousel>
         </Carousel>
-        {/* <Modal isOpen={modalIsOpen}>
-          <h2>Hello</h2>
-        </Modal> */}
       </Container>
 
       {/* <Footer /> */}

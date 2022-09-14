@@ -14,7 +14,7 @@ const Episodios: React.FC = () => {
         <ContainerCard>
           <h1 className="text">Episódios</h1>
           <Select />
-          <Card fullSize />
+          <Card />
           <Card fullSize />
           <Card fullSize />
           <Card fullSize />

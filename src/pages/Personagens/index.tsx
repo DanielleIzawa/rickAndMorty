@@ -1,12 +1,11 @@
 import React from "react";
 
 import Image from "../../commom/assets/Rick-and-Morty-Shop-logo1 1.svg";
-/* import Carousel from "../../components/Carousel"; */
+import Carousel from "../../components/Carousel";
+import Footer from "../../components/Footer";
 import FormSearch from "../../components/FormSearch";
-import Link from "../../components/Link";
 import Nav from "../../components/Nav";
-/* import HeaderTest from "./../../components/HeaderTest/index"; */
-import { ContainerText, ImageMidle } from "./styles";
+import { ContainerText } from "./styles";
 
 const Personagens: React.FC = () => {
   return (
@@ -16,11 +15,12 @@ const Personagens: React.FC = () => {
         <h1>Buscar Personagens</h1>
       </ContainerText>
       <FormSearch />
-      <ImageMidle>
+      {/* <ImageMidle>
         <img src={Image} alt="" className="Image" />
       </ImageMidle>
-      <Link />
-      {/* <Carousel /> */}
+      <Link /> */}
+      <Carousel />
+      <Footer />
     </>
   );
 };

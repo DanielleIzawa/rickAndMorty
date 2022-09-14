@@ -7,6 +7,7 @@ export const Container = styled.div`
   display: flex;
   justify-content: center;
   margin-top: 40px;
+  margin-bottom: 20px;
 `;
 export const Form = styled.form`
   width: 495px;
@@ -19,6 +20,7 @@ export const Form = styled.form`
     border-radius: 4px;
   }
   input {
+    margin-left: 20px;
     width: 450px;
     border: none;
     height: 40px;

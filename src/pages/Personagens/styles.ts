@@ -16,7 +16,7 @@ export const ContainerText = styled.div`
   }
 `;
 export const ImageMidle = styled.div`
-  margin-top: 250px;
+  margin-top: 150px;
   text-align: center;
   img {
     width: 359px;
